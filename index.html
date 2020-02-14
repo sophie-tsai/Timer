@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Workout Timer</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Bungee|Montserrat&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+	
+		<h1 id="heading">Workout Timer</h1>
+		<div class="row">
+			<div class="col-md-6 text-center"><h2 class="subheading">Session Length</h2>
+				<i class="arrows fas fa-angle-down" id="sessionNumDown" onclick="decrease('#sessionNumber')"></i>
+				<span id="sessionNumber">10</span>
+				<i class="arrows fas fa-angle-up" id="sessionNumUp" onclick="increase('#sessionNumber')"></i>
+			</div>
+			<div class="col-md-6 text-center"><h2 class="subheading">Break Length</h2>
+				<i class="arrows fas fa-angle-down" id="breakNumDown" onclick="decrease('#breakNumber')"></i>
+				<span id="breakNumber">2</span>
+				<i class="arrows fas fa-angle-up" id="breakNumUp" onclick="increase('#breakNumber')"></i>
+			</div>
+		</div>
+
+		<div class="center-block text-center rounded" id="session-box">
+			<h2 class="subheading">Session</h2>
+			<div id="sessionCountdown">
+				<span id="minutes">10</span>
+				<span>:</span>
+				<span id="seconds">00</span></div>
+		</div>
+
+		<div class="playPauseReset text-center">
+			<i class="fas fa-play" id="play" onclick="toggleTimer()"></i>
+			<i class="fas fa-sync-alt" onclick="reset()"></i>
+		</div>
+
+		<h4 id="signature" class="text-center fixed-bottom">created by Sophie Tsai</h4>
+
+	</body>
+	<script src="timer.js"></script>
+</html>

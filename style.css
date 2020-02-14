@@ -1,0 +1,61 @@
+body {
+	padding: 3vh 1vw;
+}
+
+#heading {
+	font-family: 'Bungee', cursive;
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 3vh;
+}
+
+.subheading {
+	font-size: 1.7em;
+	font-family: 'Bungee', cursive;
+}
+
+.arrows {
+	font-size: 2.5em;
+	margin: 1vh;
+}
+
+#session-box {
+	border-color: red;
+	border-width: 7px;
+	border-style: solid;
+	padding: 20px;
+	max-width: 350px;
+	margin: auto;
+}
+
+.playPauseReset {
+	font-size: 2.5em;
+	margin: 10px;
+}
+
+#sessionNumber {
+	font-family: 'Bungee', cursive;
+	font-size: 2.5em;
+	margin: 1vh;
+}
+
+#breakNumber {
+	font-family: 'Bungee', cursive;
+	font-size: 2.5em;
+	margin: 1vh;
+}
+
+#sessionCountdown {
+	font-family: 'Bungee', cursive;
+	font-size: 3em;
+}
+
+#signature {
+	font-family: 'Montserrat', sans-serif;
+	font-size: .7rem;
+	margin-bottom: 2vh;
+}
+
+#play {
+	margin: 2vw;
+}
