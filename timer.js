@@ -89,7 +89,7 @@ function timer(){
 		} else {
 			countdownTimer.style.color = "black";
 		}
-	}, 50);
+	}, 1000);
 
 }
 
